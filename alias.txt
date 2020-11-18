@@ -1,0 +1,23 @@
+#!/bin/sh
+
+#.....this is a simple file to be sourced threw for aliases.....#
+alias l="clear"
+alias ..="cd .."
+alias as ="sudo apt search "
+alias sn="sudo nano "
+alias lsa="ls -a"
+alias mka="sudo nano .zshrc"
+alias sar="sudo apt remove "
+alias sau="sudo apt update"
+alias sai="sudo apt install "
+alias sal="sudo apt list --upgradable"
+alias sac="sudo apt clean && sudo apt clean cache"
+alias saug="sudo apt -y upgrade"
+alias saar="sudo apr autoremove"
+
+#......SOURCE ALIAS.TXT TO YOURE ZSH PROFILE..........##########
+
+# source /home/Damon/builds/alias.txt
+
+# source /data/data/com.termux/files/home/alias.txt
+

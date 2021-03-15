@@ -1,0 +1,4 @@
+#!/bin/sh
+xdotool type 'sudo checkra1n -Vqt';sleep 2;xdotool key Return;xdotool key Tab;sleep 2;xdotool key Tab;sleep 2;xdotool key Tab;sleep 2;xdotool key Return;xdotool key 1 Return Return key s
+xdotool key Return;xdotool key Left;xdotool key Return Return
+

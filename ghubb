@@ -32,3 +32,4 @@ clear
 
 #  git clone https://github.com/rajkumardusad/IP-Tracer
 
+Source $HONE/zsh/tools

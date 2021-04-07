@@ -13,7 +13,7 @@ sleep 1
 clear
 echo " DEPENDENCIES INSTALLING NOW"
 sleep 2
-sudo apt install nano git wget curl python python2 python3 python-pip -y
+sudo apt install nano git wget curl python python2 python3 python-pip ninvaders nsnake  -y
 sleep 2
 sudo python -m pip install --upgrade pip
 sleep 2
@@ -24,8 +24,14 @@ sudo apt install zsh xdotool dialog figlet toilet -y
 sleep 3
 pip install --upgrade pip
 sleep 2
-pip install wheel main LICENSE
+pip install wheel main LICENSE lolcat
 sleep 2
+clear
+cd
+sudo cp -r $HOME/zsh/alias.txt $HOME
+sleep 1
+ls
+sleep 4
 clear
 tput setaf 6
 echo "THE ZSH INSTALLER COMPLETE WITH SYNTAX && OH-MY-ZSH && ALIASES"
@@ -34,7 +40,7 @@ echo "    PLEASE SELECT YOURE PACKAGE INSTALLER"
 echo " "
 echo "        apt/Debian.Linux"
 sleep 2
-xdotool type "apt" && sleep 2;xdotool key Return
+xdotool type "apt" && sleep 2 && xdotool key Return
 read a in
 if [ $a = apt ]
 then

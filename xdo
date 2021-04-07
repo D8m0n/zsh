@@ -1,0 +1,56 @@
+
+#!/bin/sh
+clear
+figlet -cf small "AUTOMATED SCRIPTS" | lolcat
+sleep 1
+tput setaf 193
+echo " PLEASE MAKE SELECTION FOR SELF AUTOMATED SCRIPT"
+echo " "
+tput setaf 202
+echo " A-Format USB Drive"
+echo " "
+echo " B-Etcher"
+echo " "
+echo " C-File_Manager"
+echo " "
+echo " X-EXIT"
+read a in
+if [ $a = a ]
+then
+  clear
+  xdotool key Super && sleep 1 && xdotool type "format" && sleep 1 && xdotool key Return && sleep 2
+  bash /home/D8m0n/builds/final/xdo
+fi
+if [ $a = b ]
+then
+  clear
+  tput setaf 5
+  echo " is flash drive already formatted?"
+  echo "                    Y/N"
+  read b in
+  if [ $b = y ]
+  then
+    clear
+    xfce4-terminal -e "sudo multibootusb" --hold
+  fi
+  if [ $b = n ]
+  then
+    clear
+    xdotool type "xfce4-terminal -e 'sudo multibootusb' --hold" && sleep 1 && xdotool key Return && sleep 1 && xdotool key Super && sleep 1 && xdotool type "format" && sleep 1 && xdotool key Return
+  fi
+fi
+if [ $a = c ]
+then
+  clear
+  xdotool key Super && sleep 1 && xdotool type "thunar" && sleep 1 && xdotool key Return && sleep 2
+  bash /home/D8m0n/builds/final/xdo
+fi
+if [ $a = x ]
+then
+  clear
+  cowsay -f ghostbusters "GOOD BI" | lolcat -as 999
+  sleep 3
+  clear
+  exit
+fi
+echo 'done'

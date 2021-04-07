@@ -5,7 +5,9 @@ echo "THE ZSH INSTALLER COMPLETE WITH SYNTAX && OH-MY-ZSH && ALIASES"
 echo " "
 echo "    PLEASE SELECT YOURE PACKAGE INSTALLER"
 echo " "
-echo "        apt/Debian.Linux"
+echo "            apt / Debian . Linux"
+echo " "
+echo "        pkg / Termux . Ubuntu - Like"
 read a in
 if [ $a = pkg ]
 then
@@ -32,4 +34,5 @@ then
   git clone https://github.com/zsh-users/zsh-syntax-highlighting
   echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh" >> .zshrc
   echo "source $HOME/alias.txt" >> .zshrc
+  sudo cp -r $HOME/zsh/alias.txt $HOME
 fi

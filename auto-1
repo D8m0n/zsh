@@ -1,0 +1,74 @@
+#!/bin/sh
+clear
+echo "  WELCOME TO THE LINUX SHELL AUTOMATED SELF INSTALLER "
+sleep 2
+echo " SIT BACK AND RELAX AS THIS SCRIPT WILL NOW BEGIN"
+sleep 2
+clear
+sudo apt update && sudo apt upgrade -y
+sleep 2
+clear
+sudo apt autoremove -y
+sleep 1
+clear
+echo " DEPENDENCIES INSTALLING NOW"
+sleep 2
+sudo apt install nano git wget curl python python2 python3 python-pip -y
+sleep 2
+sudo python -m pip install --upgrade pip
+sleep 2
+sudo python -m pip install wheel main LICENSE lolcat
+sleep 1
+clear
+sudo apt install zsh xdotool dialog figlet toilet -y
+sleep 3
+pip install --upgrade pip
+sleep 2
+pip install wheel main LICENSE
+sleep 2
+clear
+tput setaf 6
+echo "THE ZSH INSTALLER COMPLETE WITH SYNTAX && OH-MY-ZSH && ALIASES"
+echo " "
+echo "    PLEASE SELECT YOURE PACKAGE INSTALLER"
+echo " "
+echo "        apt/Debian.Linux"
+sleep 2
+xdotool type "apt" && sleep 2;xdotool key Return
+read a in
+if [ $a = apt ]
+then
+  clear
+  sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+  cd $HOME
+  sleep 1
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting
+  sleep 2
+  echo "source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
+  echo "source $HOME/alias.txt"
+  sleep 2
+fi
+sleep 2
+echo " THAT TAKES CARE OF DEPENDENCIES AND ALL MINOR START UP PACKAGES"
+echo " NEXT WILL BE INSTALLATION OF GIT REPOS"
+sleep 2
+echo "           continue  Y/N"
+read que in
+if [ $que = y ]
+then
+  clear
+  figlet -cf big " great hear we go " | lolcat -as 99
+  sleep 2
+  clear
+  echo " . . . . ."
+  sleep 1
+  clear
+  echo " . . . ."
+  sleep 1
+  clear
+  echo " . . ."
+  sleep 1
+  clear
+  echo " . ."
+fi
+source $HOME/self/auto-2

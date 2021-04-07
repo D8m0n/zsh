@@ -1,0 +1,73 @@
+#!/bin/sh
+figlet -cf small "GITHUB-REPOS" | lolcat -as 99
+sleep 2
+clear
+cd $HOME
+git clone https://github.com/rajkumardusad/Tool-X
+sleep 4
+xdotool keydown Alt_L key +k keyup Alt_L && sleep 2 && xdotool type 'cd Tool-X'
+sleep 2
+xdotool key Return
+sleep 1
+xdotool type 'ls' && sleep 2 && xdotool key Return
+sleep 2
+xdotool type 'sudo chmod +x install.aex' && sleep 2 && xdotool key Return
+sleep 1
+xdotool type 'ls' && sleep 2 && xdotool key Return
+sleep 1
+xdotool type 'sudo ./install.aex' && sleep 2 && xdotool key Return
+sleep 5
+xdotool type 'y' && sleep 2 && xdotool key Return
+sleep 4
+xdotool keydown Ctrl key +d keyup Ctrl
+sleep 2
+cd $HOME
+sleep 1
+clear
+git clone https://github.com/Ranginang67/DarkFly-Tool
+sleep 3
+xdotool keydown Alt_L key +k keyup Alt_L && sleep 2 && xdotool type 'cd DarkFly-Tool'
+sleep 2
+xdotool key Return
+sleep 2
+xdotool type 'ls' && sleep 2 && xdotool key Return
+sleep 3
+xdotool type 'sudo chmod +x install.py' && sleep 2 && xdotool key Return
+sleep 2
+xdotool type 'ls' && sleep 2 && xdotool key Return
+sleep 2
+xdotool type 'sudo python2 install.py' && sleep 2 && xdotool key Return
+sleep 5
+xdotool keydown Ctrl key +d keyup Ctrl
+sleep 2
+clear
+cd $HOME
+ls
+git clone https://github.com/rajkumardusad/IP-Tracer
+sleep 3
+xdotool keydown Alt_L key +k keyup Alt_L && sleep 2 && xdotool type 'cd IP-Tracer'
+sleep 2
+xdotool key Return
+sleep 2
+xdotool type 'ls' && sleep 2 && xdotool key Return
+sleep 3
+xdotool type 'sudo bash ip-tracer' && sleep 2 && xdotool key Return
+clear
+tput setaf 13;echo " THEIR THAT TAKES CARE OF THE MINOR GITHUB REPOS"
+sleep 2
+clear
+echo " Next will be the installation of  CheckRa1n "
+echo " continue ? Y/N"
+read ch in
+if [ $ch = y ]
+then
+  clear
+  echo " LETS MAKE IT RA1N"
+  sleep 2
+  clear
+  cmatrix
+  sleep 3
+  clear
+  exit
+fi
+source $HOME/self/auto-3

@@ -1,0 +1,40 @@
+#!/bin/sh
+alias R="cd / && sudo zsh;cd root"
+alias D="exit"
+alias l="clear"
+alias sn="sudo nano "
+alias ..="cd .."
+alias nn="xfce4-terminal -e 'bash $HOME/builds/n' --hold"
+alias tsk="xfce4-taskmanager"
+alias ass="apt search "
+alias lsa="ls -a"
+alias mka="sudo nano .zshrc"
+alias sar="sudo apt remove "
+alias sau="sudo apt update"
+alias sai="sudo apt install "
+alias sal="sudo apt list --upgradable"
+alias sac="sudo apt clean && sudo apt clean cache"
+alias saar="sudo apt autoremove"
+alias mkaa="sudo nano alias.txt"
+alias saug="sudo apt -y upgrade"
+alias work="bash $HOME/builds/work"
+alias mboot="sudo bash /home/D8m0n/builds/mboot"
+alias shell="echo $SHELL | lolcat -as 999"
+alias chmod="sudo chmod +x "
+alias google="google-chrome https:// "
+
+#.............>>>>>>>>>>>>>>>>>>>>................>>>>>>>>>>>>>>>>>...................>>>>>>>>>>>>>>>>>>>>................>>>>>>>>>>>>>>................>>>>>>>,,,........####
+
+
+alias full="sudo apt update;sleep 1;clear;sudo apt list --upgradable;sleep 2;clear;sudo apt upgrade -y;sleep 1;clear;suod apt autoremove -y;sudo apt clean cache;clear;tput setaf 84;figlet -cf small 'ALL-SET';sleep 2;xdotool keydown Ctrl key +d keyup Ctrl && sleep 0.1 && xdotool keydown Alt_L key +k keyup Alt_L"
+
+
+alias xer="xdotool type 'sudo rm -rf .xsession-errors.old .xsession-errors' && sleep 1;xdotool key Return;clear;ls -a"
+
+alias xtool=" xdotool type 'sudo Tool-X' && sleep 2 && xdotool key Return;xdotool type '1' && sleep 1 && xdotool key Return"
+
+alias cow="cowsay -f ghostbusters ' ' | lolcat -as 999"
+
+alias cows="bash /home/D8m0n/builds/cows"
+
+alias vv="bash /home/D8m0n/builds/gulf && sleep 1 && xdotool key Return"
